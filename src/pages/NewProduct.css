@@ -1,0 +1,51 @@
+.images-preview-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100px, 100%), 1fr));
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.image-preview {
+    width: 100px;
+    display: inline-block;
+    position: relative;
+}
+
+.image-preview img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.image-preview i,
+.remove-img-spinner {
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.image-preview i:hover {
+    color: orange;
+}
+
+.new-product__image--container {
+    background-image: url(https://discovertemplate.com/wp-content/uploads/2021/09/Shopping-E-Commerce-Animated-GIF-Icon-Pack_1.gif);
+    padding-top:2% ;
+    background-size: contain; 
+    /* background-position: center; */
+    height: 100vh;
+    z-index: 10;
+    background-repeat: no-repeat;
+}
+.form{
+    z-index: 1;
+}
+/* .container{
+    background-image: url(https://storage.googleapis.com/gweb-uniblog-publish-prod/images/buyers_remorse_hero_1.max-1200x416.format-webp.webp);
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;   
+} */
